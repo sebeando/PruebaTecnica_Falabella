@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Flexo-Demi";
+  src: url('./font/Flexo-Demi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +17,150 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Flexo-Demi';
+  font-size: 45px;
+  margin-bottom: 40px;
+  margin-top: 49px;
+  padding: 15px;
+  padding-right: 85px;
+  padding-left: 85px;
+  border-bottom: 5px groove rgba(255,255,255,0.5);
+}
+
+.rock {
+  background-color: rgb(148, 81, 81);
+}
+.ghost {
+  background-color: #6669BA;
+}
+.electric {
+  background-color: rgb(255, 255, 126);
+}
+.bug {
+  background-color: #ffcd82;
+}
+.poison {
+  background-color: #7e6588;
+}
+.normal {
+  background-color: #ccc;
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+.fire {
+  background-color: #f8a694;
+}
+.grass {
+  background-color:#6ace83;
+}
+.water {
+  background-color:#73a1c2;
+}
+.ground{
+  background-color: #C2AC63;
+}
+.psychic{
+  background-color: #C059A0;
+}
+.fighting{
+  background-color: #D95143;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 0.5rem;
+  background-image: url('./img/patron.jpg');
+  background-repeat: repeat;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  margin: 0.3rem;
+  border: 6px solid rgba(255,255,255,0.5);
+  border-radius: 90px;
+  min-width: 160px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 19px;
+  text-transform: capitalize;
+  font-family: 'Flexo-Demi';
+}
+
+.thumb-container .number {
+  border-radius: 58rem;
+  padding: 0.5rem 0.5rem;
+  background-color: rgba(255,255,255,0.3);
+  font-family: 'Flexo-Demi';
+}
+
+.thumb-container img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.thumb-container small {
+  text-transform: capitalize;
+  padding: 0.5rem 0.5rem;
+  background-color: rgba(255,255,255,0.3);
+  font-size: 15px;
+  font-family: 'Flexo-Demi';
+}
+
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.detail-wrapper button {
+  color: rgb(22, 22, 22);
+  padding: .5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.185);
+  
+}
+
+.load-more {
+  background: #6b95a8;
+  border-radius: 40px;
+  border: 1px solid #c6c6c6;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  min-width: 50%;
+  margin-top: 2rem;
+  font-size: 15px;
+  font-family: 'Flexo-Demi';
 }
